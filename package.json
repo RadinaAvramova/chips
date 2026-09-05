@@ -1,0 +1,19 @@
+{
+  "name": "chips-course",
+  "private": true,
+  "type": "module",
+  "scripts": {
+    "dev": "slidev slides.md --open",
+    "diagrams": "node diagrams/src/generate.mjs",
+    "build": "slidev build slides.md",
+    "build:pages": "slidev build slides.md --base /chips/",
+    "export": "slidev export slides.md",
+    "check": "node scripts/check-course.mjs && npm run build"
+  },
+  "devDependencies": {
+    "@slidev/cli": "^0.50.0",
+    "@slidev/parser": "0.50.0",
+    "@slidev/theme-default": "^0.25.0",
+    "playwright-chromium": "^1.44.0"
+  }
+}

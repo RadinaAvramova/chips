@@ -1,0 +1,1016 @@
+:root {
+  --chips-bg: #080c14;
+  --chips-panel: rgba(17, 24, 39, 0.78);
+  --chips-ink: #f8fafc;
+  --chips-muted: #a8b3c7;
+  --chips-line: rgba(148, 163, 184, 0.34);
+  --chips-cyan: #67e8f9;
+  --chips-blue: #60a5fa;
+  --chips-amber: #fbbf24;
+  --slidev-theme-primary: var(--chips-cyan);
+}
+
+* {
+  box-sizing: border-box;
+}
+
+.slidev-layout {
+  position: relative;
+  overflow: hidden;
+  padding: 3rem 3.5rem 2.75rem;
+  color: var(--chips-ink);
+  background-color: var(--chips-bg);
+  background-image:
+    radial-gradient(circle at 88% 8%, rgba(34, 211, 238, 0.08), transparent 26%),
+    linear-gradient(rgba(148, 163, 184, 0.035) 1px, transparent 1px),
+    linear-gradient(90deg, rgba(148, 163, 184, 0.035) 1px, transparent 1px);
+  background-size: auto, 40px 40px, 40px 40px;
+  font-variant-numeric: tabular-nums;
+  letter-spacing: -0.012em;
+}
+
+.slidev-layout::before {
+  position: absolute;
+  inset: 0 0 auto;
+  height: 4px;
+  content: "";
+  background: linear-gradient(90deg, var(--chips-cyan), var(--chips-blue) 42%, transparent 78%);
+}
+
+.slidev-layout h1 {
+  max-width: 94%;
+  margin-bottom: 0.75rem;
+  color: var(--chips-ink);
+  font-size: 2.55rem;
+  font-weight: 680;
+  line-height: 1.05;
+  letter-spacing: -0.042em;
+  text-wrap: balance;
+}
+
+.slidev-layout h2 {
+  color: var(--chips-muted);
+  font-size: 1.25rem;
+  font-weight: 560;
+  line-height: 1.25;
+  letter-spacing: 0.01em;
+}
+
+.slidev-layout p,
+.slidev-layout li {
+  color: #dbe5f2;
+  line-height: 1.48;
+}
+
+.slidev-layout strong,
+.slidev-layout b {
+  color: #ffffff;
+}
+
+.slidev-layout .text-sm {
+  font-size: 0.92rem;
+  line-height: 1.35;
+}
+
+.slidev-layout .text-xs {
+  font-size: 0.78rem;
+  line-height: 1.3;
+}
+
+.slidev-layout .opacity-40 { opacity: 0.62; }
+.slidev-layout .opacity-50 { opacity: 0.69; }
+.slidev-layout .opacity-60 { opacity: 0.76; }
+.slidev-layout .opacity-70 { opacity: 0.84; }
+.slidev-layout .opacity-80 { opacity: 0.9; }
+
+.slidev-layout div.border,
+.slidev-layout div.border-2 {
+  background: linear-gradient(145deg, rgba(23, 32, 51, 0.92), rgba(11, 17, 29, 0.86));
+  box-shadow: 0 16px 42px rgba(0, 0, 0, 0.22);
+}
+
+.slidev-layout .border-gray-400,
+.slidev-layout .border-gray-500 {
+  border-color: var(--chips-line) !important;
+}
+
+.slidev-layout .bg-gray-300,
+.slidev-layout .bg-gray-400,
+.slidev-layout .bg-gray-500,
+.slidev-layout .bg-gray-600,
+.slidev-layout .bg-gray-700 {
+  background-color: #334155 !important;
+}
+
+.slidev-layout img {
+  filter: drop-shadow(0 18px 30px rgba(0, 0, 0, 0.28));
+}
+
+.slidev-layout.act-divider {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: flex-end;
+  padding: 4.75rem 5rem 5.25rem;
+  text-align: left;
+  background-image:
+    radial-gradient(circle at 82% 24%, rgba(96, 165, 250, 0.16), transparent 29%),
+    linear-gradient(135deg, rgba(103, 232, 249, 0.07), transparent 45%),
+    linear-gradient(rgba(148, 163, 184, 0.035) 1px, transparent 1px),
+    linear-gradient(90deg, rgba(148, 163, 184, 0.035) 1px, transparent 1px);
+  background-size: auto, auto, 40px 40px, 40px 40px;
+}
+
+.slidev-layout.act-divider::after {
+  position: absolute;
+  top: 5rem;
+  left: 5rem;
+  color: var(--chips-cyan);
+  font-size: 0.78rem;
+  font-weight: 700;
+  letter-spacing: 0.22em;
+  content: "THE CHIP JOURNEY";
+}
+
+.slidev-layout.act-divider h1 {
+  max-width: 78%;
+  margin: 0;
+  font-size: 4.65rem;
+  line-height: 0.96;
+  text-align: left;
+}
+
+.slidev-layout.act-divider h2 {
+  max-width: 70%;
+  margin-top: 1.3rem;
+  color: #c7d2e4;
+  font-size: 1.35rem;
+  text-align: left;
+}
+
+.slidev-layout.title-slide {
+  padding: 4.5rem 4.75rem;
+  background-image:
+    radial-gradient(circle at 85% 30%, rgba(251, 191, 36, 0.13), transparent 36%),
+    linear-gradient(rgba(148, 163, 184, 0.035) 1px, transparent 1px),
+    linear-gradient(90deg, rgba(148, 163, 184, 0.035) 1px, transparent 1px);
+  background-size: auto, 40px 40px, 40px 40px;
+}
+
+.title-slide .title-visual {
+  position: absolute;
+  z-index: 0;
+  top: -5%;
+  right: -7%;
+  width: 67%;
+  height: 110%;
+  overflow: hidden;
+  opacity: 0.56;
+  mask-image: linear-gradient(90deg, transparent 0%, rgba(0, 0, 0, 0.65) 28%, #000 56%);
+}
+
+.title-slide .title-visual::after {
+  position: absolute;
+  inset: 0;
+  content: "";
+  background: linear-gradient(90deg, var(--chips-bg), transparent 42%), rgba(8, 12, 20, 0.18);
+}
+
+.title-slide .title-visual img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  filter: saturate(0.72) contrast(1.2) brightness(0.58);
+}
+
+.title-slide .title-kicker,
+.title-slide h1,
+.title-slide .title-subtitle,
+.title-slide .title-journey {
+  position: relative;
+  z-index: 2;
+}
+
+.title-slide .title-kicker {
+  margin-top: 1rem;
+  color: var(--chips-cyan);
+  font-size: 0.88rem;
+  font-weight: 720;
+  letter-spacing: 0.22em;
+}
+
+.slidev-layout.title-slide h1 {
+  width: 64%;
+  max-width: none;
+  margin: 1rem 0 0.35rem;
+  font-size: 8.4rem;
+  font-weight: 720;
+  line-height: 0.9;
+  letter-spacing: -0.075em;
+}
+
+.title-slide .title-subtitle {
+  width: 55%;
+  color: #e5edf8;
+  font-size: 1.55rem;
+  line-height: 1.25;
+}
+
+.title-slide .title-journey {
+  display: flex;
+  gap: 0.55rem;
+  margin-top: 3.3rem;
+}
+
+.title-slide .title-journey span {
+  padding: 0.38rem 0.72rem;
+  border: 1px solid rgba(103, 232, 249, 0.38);
+  border-radius: 999px;
+  color: #d7e4f4;
+  background: rgba(8, 12, 20, 0.62);
+  font-size: 0.66rem;
+  font-weight: 700;
+  letter-spacing: 0.11em;
+}
+
+.slidev-layout.journey-overview {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  padding: 2.25rem 2rem;
+}
+
+.slidev-layout.journey-overview h1 {
+  align-self: center;
+  max-width: none;
+  margin: 0 0 1.75rem;
+  font-size: 3.25rem;
+  text-align: center;
+}
+
+.journey-overview__graphic {
+  width: 100%;
+}
+
+.journey-overview__graphic img {
+  display: block;
+  width: 100%;
+  max-width: none;
+  opacity: 1;
+  filter: none;
+}
+
+/* Mask-level deep dive: generated technical art carries the visual story; HTML keeps terminology exact and editable. */
+.slidev-layout.mask-level-stack,
+.slidev-layout.mask-patterning-compare {
+  padding: 0;
+  background: #04070d;
+}
+
+.slidev-layout.mask-level-stack::before,
+.slidev-layout.mask-patterning-compare::before {
+  z-index: 30;
+  height: 2px;
+}
+
+.mask-level-stack__art,
+.mask-patterning-compare__art {
+  position: absolute;
+  z-index: 1;
+  inset: 0;
+  display: block;
+  width: 100%;
+  height: 100%;
+  max-width: none;
+  max-height: none;
+  object-fit: cover;
+  border-radius: 0;
+  filter: none !important;
+}
+
+.mask-level-stack__scrim {
+  position: absolute;
+  z-index: 2;
+  inset: 0;
+  background: linear-gradient(90deg, rgba(4, 7, 13, 0.98) 0%, rgba(4, 7, 13, 0.9) 31%, rgba(4, 7, 13, 0.24) 54%, transparent 72%);
+}
+
+.mask-level-stack__copy {
+  position: absolute;
+  z-index: 10;
+  top: 2.65rem;
+  left: 3rem;
+  width: 43%;
+}
+
+.mask-level-stack__kicker {
+  margin-bottom: 0.75rem;
+  color: var(--chips-cyan);
+  font-size: 0.74rem;
+  font-weight: 760;
+  letter-spacing: 0.2em;
+}
+
+.slidev-layout.mask-level-stack h1 {
+  max-width: none;
+  margin: 0 0 1.75rem;
+  font-size: 3.05rem;
+  line-height: 0.98;
+}
+
+.mask-level-stack__terms {
+  display: grid;
+  gap: 0.95rem;
+}
+
+.mask-level-stack__terms > div {
+  display: grid;
+  grid-template-columns: 9.2rem 1fr;
+  align-items: baseline;
+  padding-bottom: 0.65rem;
+  border-bottom: 1px solid rgba(148, 163, 184, 0.22);
+}
+
+.mask-level-stack__terms strong {
+  color: #ffffff;
+  font-size: 0.78rem;
+  letter-spacing: 0.1em;
+}
+
+.mask-level-stack__terms span {
+  color: #dbe5f2;
+  font-size: 1.05rem;
+}
+
+.mask-level-stack__takeaway {
+  margin-top: 1.35rem;
+  color: var(--chips-amber);
+  font-size: 1.25rem;
+  font-weight: 720;
+}
+
+.mask-level-stack__source,
+.mask-patterning-compare__source {
+  position: absolute;
+  z-index: 20;
+  right: 1.4rem;
+  bottom: 1.1rem;
+  color: rgba(168, 179, 199, 0.78);
+  font-size: 0.67rem;
+  letter-spacing: 0.025em;
+}
+
+.mask-patterning-compare__shade {
+  position: absolute;
+  z-index: 2;
+  inset: 0;
+  background:
+    linear-gradient(180deg, rgba(4, 7, 13, 0.95) 0%, rgba(4, 7, 13, 0.28) 15%, transparent 28%),
+    linear-gradient(180deg, transparent 72%, rgba(4, 7, 13, 0.78) 100%);
+}
+
+.slidev-layout.mask-patterning-compare h1 {
+  position: absolute;
+  z-index: 20;
+  top: 1.25rem;
+  left: 0;
+  width: 100%;
+  max-width: none;
+  margin: 0;
+  font-size: 2.75rem;
+  text-align: center;
+}
+
+.mask-patterning-compare__label {
+  position: absolute;
+  z-index: 20;
+  top: 7.3rem;
+  display: flex;
+  flex-direction: column;
+  min-width: 12rem;
+  padding: 0.7rem 0.95rem 0.78rem;
+  border: 1px solid rgba(103, 232, 249, 0.3);
+  border-radius: 0.35rem;
+  background: rgba(4, 7, 13, 0.78);
+  box-shadow: 0 0.75rem 2rem rgba(0, 0, 0, 0.28);
+  backdrop-filter: blur(8px);
+}
+
+.mask-patterning-compare__label--duv {
+  left: 5.2rem;
+}
+
+.mask-patterning-compare__label--euv {
+  right: 5.2rem;
+}
+
+.mask-patterning-compare__label strong {
+  color: var(--chips-cyan);
+  font-size: 2.15rem;
+  line-height: 0.95;
+}
+
+.mask-patterning-compare__label span {
+  margin-top: 0.35rem;
+  color: #eef6ff;
+  font-size: 0.92rem;
+  font-weight: 650;
+}
+
+.mask-patterning-compare__takeaway {
+  position: absolute;
+  z-index: 20;
+  bottom: 1.2rem;
+  left: 2rem;
+  display: flex;
+  gap: 0.65rem;
+  align-items: baseline;
+  color: #dbe5f2;
+  font-size: 0.94rem;
+}
+
+.mask-patterning-compare__takeaway strong {
+  color: var(--chips-amber);
+  font-size: 1.1rem;
+}
+
+.slidev-layout.stage-map-focus {
+  display: grid;
+  grid-template-rows: auto minmax(0, 1fr) 4.5rem;
+  padding: 2.1rem 2.5rem 1.4rem;
+}
+
+.slidev-layout.stage-map-focus h1 {
+  align-self: center;
+  max-width: none;
+  margin: 0 0 0.65rem;
+  font-size: 3rem;
+  text-align: center;
+}
+
+.stage-map-focus__map {
+  min-height: 0;
+  overflow: hidden;
+}
+
+.stage-map-focus__map img {
+  display: block;
+  width: 100%;
+  height: 100%;
+  max-width: none;
+  object-fit: contain;
+  opacity: 1;
+  filter: none;
+}
+
+.stage-map-focus__journey {
+  display: block;
+  width: 100%;
+  height: 100%;
+  max-width: none;
+  object-fit: contain;
+  opacity: 1;
+  filter: none !important;
+}
+
+.slidev-layout.map-only-focus {
+  display: grid;
+  grid-template-rows: auto minmax(0, 1fr);
+  padding: 2.1rem 2.5rem 1.6rem;
+}
+
+.slidev-layout.map-only-focus h1 {
+  align-self: center;
+  max-width: none;
+  margin: 0 0 0.65rem;
+  font-size: 3rem;
+  text-align: center;
+}
+
+.map-only-focus__map {
+  min-height: 0;
+  overflow: hidden;
+}
+
+.map-only-focus__map img {
+  display: block;
+  width: 100%;
+  height: 100%;
+  max-width: none;
+  object-fit: contain;
+  opacity: 1;
+  filter: none;
+}
+
+.slidev-layout.yield-model {
+  padding: 3.25rem 4.25rem;
+}
+
+.slidev-layout.yield-model h1 {
+  max-width: none;
+  margin: 0;
+  font-size: 3rem;
+  text-align: center;
+}
+
+.yield-model__equation {
+  margin-top: 2.1rem;
+  color: #ffffff;
+  font-family: Georgia, "Times New Roman", serif;
+  font-size: 5rem;
+  font-weight: 600;
+  line-height: 1;
+  text-align: center;
+}
+
+.yield-model__equation sup {
+  color: var(--chips-cyan);
+  font-size: 0.55em;
+}
+
+.yield-model__terms {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  margin-top: 2.2rem;
+  padding: 1.25rem 0;
+  border-top: 1px solid var(--chips-line);
+  border-bottom: 1px solid var(--chips-line);
+}
+
+.yield-model__terms > div {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 0.35rem;
+  text-align: center;
+}
+
+.yield-model__terms > div + div {
+  border-left: 1px solid var(--chips-line);
+}
+
+.yield-model__terms strong {
+  color: var(--chips-cyan);
+  font-size: 2.25rem;
+  line-height: 1;
+}
+
+.yield-model__terms span {
+  color: #dbe5f2;
+  font-size: 1.05rem;
+}
+
+.yield-model__takeaway {
+  margin-top: 1.65rem;
+  color: #ffffff;
+  font-size: 1.45rem;
+  font-weight: 650;
+  text-align: center;
+}
+
+.yield-model__limit {
+  margin-top: 0.7rem;
+  color: var(--chips-muted);
+  font-size: 0.95rem;
+  text-align: center;
+}
+
+/* Artifact-first scenes: the diagram is the slide; narration carries the prose. */
+.slidev-layout.visual-sequence {
+  padding: 0;
+  background-color: #05080e;
+  background-image:
+    radial-gradient(circle at 72% 36%, rgba(96, 165, 250, 0.055), transparent 38%),
+    linear-gradient(180deg, rgba(255, 255, 255, 0.018), transparent 24%);
+}
+
+.slidev-layout.visual-sequence::before {
+  height: 2px;
+  background: linear-gradient(90deg, var(--chips-cyan), rgba(96, 165, 250, 0.58) 38%, transparent 72%);
+}
+
+.visual-sequence h1,
+.visual-sequence__kicker {
+  position: absolute;
+  z-index: 20;
+  top: 1.5rem;
+  left: 2.25rem;
+  max-width: 72%;
+  margin: 0;
+  color: rgba(213, 225, 240, 0.76);
+  font-size: 0.72rem;
+  font-weight: 720;
+  line-height: 1;
+  letter-spacing: 0.18em;
+  text-transform: uppercase;
+}
+
+.visual-sequence__frame {
+  position: absolute;
+  z-index: 2;
+  inset: 2.55rem 1.2rem 3.15rem;
+  display: grid;
+  place-items: center;
+}
+
+.visual-sequence__frame p {
+  width: 100%;
+  height: 100%;
+  margin: 0;
+}
+
+.visual-sequence__frame img,
+.visual-sequence > img {
+  width: 100%;
+  height: 100%;
+  object-fit: contain;
+  filter: none;
+}
+
+.paper-visual .visual-sequence__frame,
+.contain-visual .visual-sequence__frame {
+  bottom: 4.3rem;
+  overflow: hidden;
+}
+
+.paper-visual .visual-sequence__frame {
+  background: #f4f0e8;
+  border: 1px solid rgba(148, 163, 184, 0.22);
+  border-radius: 0.3rem;
+  box-shadow: 0 1rem 3rem rgba(0, 0, 0, 0.2);
+}
+
+.paper-visual .visual-sequence__frame p,
+.contain-visual .visual-sequence__frame p {
+  position: relative;
+  min-width: 0;
+  min-height: 0;
+  overflow: hidden;
+}
+
+.paper-visual .visual-sequence__frame img,
+.contain-visual .visual-sequence__frame img {
+  position: absolute;
+  inset: 0;
+  display: block;
+  width: 100% !important;
+  height: 100% !important;
+  max-width: none;
+  max-height: none;
+  object-fit: contain;
+}
+
+.visual-sequence__caption {
+  position: absolute;
+  z-index: 20;
+  bottom: 2.2rem;
+  left: 2.25rem;
+  display: flex;
+  align-items: baseline;
+  gap: 0.65rem;
+  max-width: 72%;
+  color: rgba(239, 246, 255, 0.94);
+  font-size: 1rem;
+  font-weight: 610;
+  line-height: 1.2;
+  letter-spacing: -0.018em;
+}
+
+.visual-sequence__caption strong {
+  color: var(--chips-cyan);
+  font-weight: 760;
+}
+
+.visual-sequence__source {
+  position: absolute;
+  z-index: 20;
+  right: 1.5rem;
+  bottom: 2.2rem;
+  max-width: 24%;
+  color: rgba(168, 179, 199, 0.74);
+  font-size: 0.7rem;
+  line-height: 1.25;
+  text-align: right;
+}
+
+.slidev-layout.euv-optics-photo {
+  position: relative;
+  padding: 0;
+  overflow: hidden;
+  background: #03070d;
+}
+
+.euv-optics-photo__image {
+  position: absolute;
+  inset: 0;
+  display: block;
+  width: 100%;
+  height: 100%;
+  margin: 0;
+  max-width: none;
+  max-height: none;
+  object-fit: cover;
+  filter: none;
+}
+
+.slidev-layout.euv-optics-photo::after {
+  position: absolute;
+  z-index: 1;
+  inset: 0;
+  background:
+    linear-gradient(180deg, rgba(2, 6, 12, 0.94) 0%, rgba(2, 6, 12, 0.58) 19%, rgba(2, 6, 12, 0.04) 48%, rgba(2, 6, 12, 0.18) 100%),
+    linear-gradient(90deg, rgba(2, 6, 12, 0.56) 0%, rgba(2, 6, 12, 0.08) 52%, transparent 76%);
+  content: "";
+}
+
+.euv-optics-photo__copy {
+  position: absolute;
+  z-index: 2;
+  top: 1.55rem;
+  left: 2.25rem;
+  right: 2.25rem;
+  color: #f8fafc;
+}
+
+.euv-optics-photo__kicker {
+  margin-bottom: 0.4rem;
+  color: rgba(213, 225, 240, 0.76);
+  font-size: 0.72rem;
+  font-weight: 720;
+  line-height: 1;
+  letter-spacing: 0.18em;
+}
+
+.euv-optics-photo__copy h1 {
+  margin: 0;
+  max-width: none;
+  color: #f8fafc;
+  font-size: 2.25rem;
+  font-weight: 780;
+  line-height: 1;
+  letter-spacing: -0.04em;
+}
+
+.slidev-layout.euv-optics-photo .euv-optics-photo__copy p {
+  margin: 0.72rem 0 0 !important;
+  color: #f8fafc !important;
+  font-size: 1rem;
+  font-weight: 650;
+  opacity: 1;
+  text-shadow: 0 1px 8px rgba(0, 0, 0, 0.8);
+}
+
+.euv-optics-photo__copy p strong {
+  color: var(--chips-cyan);
+}
+
+.euv-optics-photo__source {
+  position: absolute;
+  z-index: 2;
+  right: 1.5rem;
+  bottom: 1.15rem;
+  color: rgba(239, 246, 255, 0.72);
+  font-size: 0.62rem;
+  font-weight: 650;
+  letter-spacing: 0.08em;
+}
+
+.slidev-layout.full-slide-visual {
+  padding: 0;
+  overflow: hidden;
+}
+
+.slidev-layout.full-slide-visual > img {
+  display: block;
+  width: 100%;
+  height: 100%;
+  margin: 0;
+  border-radius: 0;
+  object-fit: cover;
+  filter: none;
+}
+
+/* Keep the inference flow tied to the physical GB300 board without covering its path labels. */
+.inference-hardware-inset {
+  position: absolute;
+  z-index: 20;
+  top: 20.9rem;
+  right: 0.6rem;
+  width: 11.7rem;
+  margin: 0;
+}
+
+.inference-hardware-inset img {
+  display: block;
+  width: 100%;
+  height: auto;
+  margin: 0;
+  border: 1px solid rgba(47, 123, 101, 0.72);
+  border-radius: 0.45rem;
+  background: #fff;
+  box-shadow: 0 0.55rem 1.4rem rgba(32, 37, 43, 0.18);
+  filter: none;
+}
+
+.inference-hardware-inset figcaption {
+  position: absolute;
+  top: -1rem;
+  right: 0;
+  padding: 0.24rem 0.42rem 0.2rem;
+  border: 1px solid rgba(47, 123, 101, 0.72);
+  border-radius: 0.3rem 0.3rem 0 0;
+  color: #2f7b65;
+  background: #fffaf0;
+  font-size: 0.52rem;
+  font-weight: 820;
+  line-height: 1;
+  letter-spacing: 0.1em;
+}
+
+/* Explain High-NA as an optical quantity before introducing its resolution payoff. */
+.slidev-layout.na-explainer {
+  padding: 2.65rem 3.5rem 2.35rem;
+}
+
+.slidev-layout.na-explainer h1 {
+  max-width: none;
+  margin-bottom: 1.15rem;
+  font-size: 2.25rem;
+  white-space: nowrap;
+}
+
+.na-explainer__definition {
+  display: flex;
+  align-items: baseline;
+  gap: 1.1rem;
+  padding: 0.9rem 0;
+  border-top: 1px solid rgba(148, 163, 184, 0.28);
+  border-bottom: 1px solid rgba(148, 163, 184, 0.28);
+}
+
+.na-explainer__definition span {
+  flex: 0 0 auto;
+  color: var(--chips-cyan);
+  font-size: 0.72rem;
+  font-weight: 760;
+  letter-spacing: 0.16em;
+}
+
+.na-explainer__definition strong {
+  color: #dbe5f2;
+  font-size: 1.05rem;
+  font-weight: 610;
+  letter-spacing: 0;
+}
+
+.na-explainer__comparison {
+  display: grid;
+  grid-template-columns: 1fr 0.85fr 1fr;
+  align-items: center;
+  gap: 2rem;
+  margin-top: 1.7rem;
+}
+
+.na-explainer__system {
+  text-align: center;
+}
+
+.na-explainer__value {
+  color: rgba(226, 232, 240, 0.68);
+  font-size: 4.35rem;
+  font-weight: 760;
+  line-height: 0.95;
+  letter-spacing: -0.055em;
+}
+
+.na-explainer__system--high .na-explainer__value,
+.na-explainer__system--high .na-explainer__resolution {
+  color: var(--chips-cyan);
+}
+
+.na-explainer__value span {
+  font-size: 0.3em;
+  font-weight: 740;
+  letter-spacing: 0.08em;
+}
+
+.na-explainer__platform {
+  margin-top: 0.65rem;
+  color: rgba(203, 213, 225, 0.72);
+  font-size: 0.72rem;
+  font-weight: 740;
+  letter-spacing: 0.13em;
+}
+
+.na-explainer__resolution {
+  margin-top: 1rem;
+  color: #f8fafc;
+  font-size: 1.55rem;
+  font-weight: 740;
+}
+
+.na-explainer__resolution span {
+  color: rgba(203, 213, 225, 0.68);
+  font-size: 0.58em;
+  font-weight: 600;
+}
+
+.na-explainer__relationship {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 0.55rem;
+  color: rgba(203, 213, 225, 0.64);
+  text-align: center;
+}
+
+.na-explainer__relationship::before,
+.na-explainer__relationship::after {
+  width: 100%;
+  height: 1px;
+  content: "";
+  background: linear-gradient(90deg, transparent, rgba(103, 232, 249, 0.56), transparent);
+}
+
+.na-explainer__relationship span {
+  font-size: 0.68rem;
+  font-weight: 720;
+  letter-spacing: 0.12em;
+}
+
+.na-explainer__relationship strong {
+  color: #ffffff;
+  font-family: "JetBrains Mono", ui-monospace, monospace;
+  font-size: 1.12rem;
+  font-weight: 650;
+  letter-spacing: -0.025em;
+}
+
+.na-explainer__pitch {
+  margin-top: 1.75rem;
+  color: #dbe5f2;
+  font-size: 1.05rem;
+  text-align: center;
+}
+
+.na-explainer__pitch strong {
+  color: var(--chips-amber);
+}
+
+.na-explainer__scope {
+  margin-top: 0.55rem;
+  color: rgba(203, 213, 225, 0.64);
+  font-size: 0.78rem;
+  text-align: center;
+}
+
+/* Presenter notes are short bullet prompts designed to be scanned while speaking. */
+.slidev-presenter .grid-section.note {
+  font-size: 18px;
+}
+
+.slidev-presenter .grid-section.note .slidev-note {
+  width: 100%;
+  max-width: 64ch;
+  margin-inline: auto;
+  padding: 1.15rem 1.35rem 2.75rem;
+  color: #dbe5f2;
+  font-family: Inter, ui-sans-serif, system-ui, sans-serif;
+  line-height: 1.55;
+  text-wrap: pretty;
+  overflow-wrap: anywhere;
+}
+
+.slidev-presenter .slidev-note ul {
+  margin: 0;
+  padding-left: 1.2rem;
+}
+
+.slidev-presenter .slidev-note li {
+  padding-left: 0.15rem;
+  line-height: 1.48;
+}
+
+.slidev-presenter .slidev-note li + li {
+  margin-top: 0.55em;
+}
+
+.slidev-presenter .slidev-note li::marker {
+  color: var(--chips-cyan);
+}
+
+/* Slidev 0.50 leaves the closed goto list rendered below its off-screen input. */
+#slidev-goto-dialog:not(.top-5) {
+  pointer-events: none;
+}
+
+#slidev-goto-dialog:not(.top-5) .autocomplete-list {
+  display: none;
+}
+
+@media print {
+  .slidev-layout {
+    print-color-adjust: exact;
+    -webkit-print-color-adjust: exact;
+  }
+}
