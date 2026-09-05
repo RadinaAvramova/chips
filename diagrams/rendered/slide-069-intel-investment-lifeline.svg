@@ -1,0 +1,63 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1920" height="1080" viewBox="0 0 1920 1080" role="img" aria-labelledby="title desc" font-family="Inter, -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif">
+<title id="title">Three investors supplied Intel capital; no external 14A anchor customer was publicly named</title>
+<desc id="desc">The US government, SoftBank, and Nvidia bought 15.9 billion dollars of Intel equity. A separate box notes that Intel had not publicly named an external 14A anchor customer.</desc>
+<defs>
+  <pattern id="paper-grid" width="48" height="48" patternUnits="userSpaceOnUse">
+    <path d="M48 0H0V48" fill="none" stroke="#ded7cb" stroke-width="1" opacity="0.24"/>
+  </pattern>
+  <filter id="paper-shadow" x="-30%" y="-30%" width="160%" height="180%">
+    <feDropShadow dx="0" dy="10" stdDeviation="13" flood-color="#493f30" flood-opacity="0.12"/>
+  </filter>
+  <marker id="arrow-ink" markerWidth="12" markerHeight="12" refX="10" refY="6" orient="auto"><path d="M0 0L12 6L0 12Z" fill="#515b64"/></marker>
+  <marker id="arrow-blue" markerWidth="12" markerHeight="12" refX="10" refY="6" orient="auto"><path d="M0 0L12 6L0 12Z" fill="#2f6f9f"/></marker>
+  <marker id="arrow-green" markerWidth="12" markerHeight="12" refX="10" refY="6" orient="auto"><path d="M0 0L12 6L0 12Z" fill="#2f7b65"/></marker>
+  <marker id="arrow-rose" markerWidth="12" markerHeight="12" refX="10" refY="6" orient="auto"><path d="M0 0L12 6L0 12Z" fill="#b24956"/></marker>
+</defs>
+<rect width="1920" height="1080" fill="#f3efe7"/>
+<rect width="1920" height="1080" fill="url(#paper-grid)"/>
+<text x="104" y="92" fill="#747a76" font-size="20" font-weight="760" text-anchor="start" letter-spacing="3.6" opacity="1">INTEL 14A</text>
+<text x="104" y="156" fill="#20252b" font-size="48" font-weight="760" text-anchor="start" letter-spacing="0" opacity="1">Capital arrived; no external anchor was publicly named</text>
+<path d="M104 190H1816" stroke="#cec6b9" stroke-width="2"/>
+
+<text x="104" y="276" fill="#747a76" font-size="21" font-weight="820" text-anchor="start" letter-spacing="2.2" opacity="1">ANNOUNCED EQUITY</text>
+<text x="104" y="356" fill="#20252b" font-size="68" font-weight="860" text-anchor="start" letter-spacing="0" opacity="1">$15.9B</text>
+
+<text x="104" y="452" fill="#2f6f9f" font-size="19" font-weight="820" text-anchor="start" letter-spacing="1.2" opacity="1">US GOVERNMENT</text>
+<text x="638" y="452" fill="#2f6f9f" font-size="26" font-weight="840" text-anchor="end" letter-spacing="0" opacity="1">$8.9B</text>
+<rect x="104" y="474" width="534" height="22" rx="11" fill="#dceaf3"/>
+<rect x="104" y="474" width="534" height="22" rx="11" fill="#2f6f9f" opacity="0.88"/>
+<text x="104" y="532" fill="#2f7b65" font-size="19" font-weight="820" text-anchor="start" letter-spacing="1.2" opacity="1">NVIDIA</text>
+<text x="638" y="532" fill="#2f7b65" font-size="26" font-weight="840" text-anchor="end" letter-spacing="0" opacity="1">$5B</text>
+<rect x="104" y="554" width="534" height="22" rx="11" fill="#d9ebe3"/>
+<rect x="104" y="554" width="300" height="22" rx="11" fill="#2f7b65" opacity="0.88"/>
+<text x="104" y="612" fill="#b87821" font-size="19" font-weight="820" text-anchor="start" letter-spacing="1.2" opacity="1">SOFTBANK</text>
+<text x="638" y="612" fill="#b87821" font-size="26" font-weight="840" text-anchor="end" letter-spacing="0" opacity="1">$2B</text>
+<rect x="104" y="634" width="534" height="22" rx="11" fill="#f1e1c3"/>
+<rect x="104" y="634" width="120" height="22" rx="11" fill="#b87821" opacity="0.9"/>
+<text x="104" y="708" fill="#747a76" font-size="18" font-weight="620" text-anchor="start" letter-spacing="0" opacity="1">Equity announced in August–September 2025</text>
+
+<path d="M666 520L752 520" fill="none" stroke="#515b64" stroke-width="5" stroke-linecap="round" marker-end="url(#arrow-ink)" opacity="1"/>
+
+<rect x="780" y="274" width="448" height="492" rx="28" fill="#fffaf0" stroke="#515b64" stroke-width="2.5" filter="url(#paper-shadow)"/>
+<text x="1004" y="330" fill="#515b64" font-size="21" font-weight="820" text-anchor="middle" letter-spacing="2.2" opacity="1">INTEL</text>
+<g transform="translate(890 424) scale(1)">
+<path d="M0 150V48L86 88V48L174 88V18H228V150Z" fill="#fffaf0" stroke="#515b64" stroke-width="5" stroke-linejoin="round"/>
+<path d="M28 119H60V150H28ZM92 119H124V150H92ZM156 119H188V150H156Z" fill="#515b64" opacity="0.26" stroke="#515b64" stroke-width="3"/>
+<path d="M174 18V-24H228V18" fill="#515b64" opacity="0.18" stroke="#515b64" stroke-width="5"/>
+</g>
+<text x="1004" y="650" fill="#705a96" font-size="58" font-weight="860" text-anchor="middle" letter-spacing="0" opacity="1">14A</text>
+<text x="1004" y="698" fill="#705a96" font-size="21" font-weight="820" text-anchor="middle" letter-spacing="1.5" opacity="1">HIGH-NA EUV</text>
+<text x="1004" y="732" fill="#747a76" font-size="18" font-weight="650" text-anchor="middle" letter-spacing="0" opacity="1">development committed</text>
+
+<path d="M1256 520L1346 520" fill="none" stroke="#b24956" stroke-width="5" stroke-linecap="round" stroke-dasharray="10 9" marker-end="url(#arrow-rose)" opacity="1"/>
+
+<rect x="1380" y="300" width="436" height="432" rx="28" fill="#f1dadd" stroke="#b24956" stroke-width="3" stroke-dasharray="12 10"/>
+<text x="1598" y="360" fill="#b24956" font-size="19" font-weight="820" text-anchor="middle" letter-spacing="1.3" opacity="1">EXTERNAL ANCHOR CUSTOMER</text>
+<path d="M1482 426H1714M1482 470H1660M1482 514H1690" stroke="#b24956" stroke-width="4" opacity="0.28" stroke-linecap="round"/>
+<text x="1598" y="606" fill="#b24956" font-size="62" font-weight="860" text-anchor="middle" letter-spacing="0" opacity="1">NONE</text>
+<text x="1598" y="650" fill="#b24956" font-size="23" font-weight="760" text-anchor="middle" letter-spacing="0" opacity="1">publicly named</text>
+<text x="1598" y="696" fill="#747a76" font-size="17" font-weight="650" text-anchor="middle" letter-spacing="0" opacity="1">fab expansion remains demand-gated</text>
+
+<path d="M104 858H1816" stroke="#cec6b9" stroke-width="2"/>
+<text x="960" y="936" fill="#20252b" font-size="27" font-weight="820" text-anchor="middle" letter-spacing="1.2" opacity="1">CAPITAL CAN FUND DEVELOPMENT · IT CANNOT CREATE CUSTOMER ORDERS</text>
+</svg>

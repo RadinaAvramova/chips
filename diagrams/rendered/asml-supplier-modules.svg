@@ -1,0 +1,50 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1920 1080" role="img" aria-labelledby="title desc" font-family="Inter, -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif">
+<title id="title">Supplier modules inside an ASML EUV system</title>
+<desc id="desc">TRUMPF supplies the carbon dioxide laser, Cymer supplies the source, ZEISS supplies the optics, and ASML supplies stages, control and system integration.</desc>
+<defs>
+  <filter id="glow" x="-100%" y="-100%" width="300%" height="300%">
+    <feGaussianBlur stdDeviation="9" result="blur"/>
+    <feMerge><feMergeNode in="blur"/><feMergeNode in="SourceGraphic"/></feMerge>
+  </filter>
+  <marker id="arrow-cyan" markerWidth="12" markerHeight="12" refX="10" refY="6" orient="auto"><path d="M0,0 L12,6 L0,12 Z" fill="#67e8f9"/></marker>
+  <marker id="arrow-amber" markerWidth="12" markerHeight="12" refX="10" refY="6" orient="auto"><path d="M0,0 L12,6 L0,12 Z" fill="#fbbf24"/></marker>
+  <marker id="arrow-rose" markerWidth="12" markerHeight="12" refX="10" refY="6" orient="auto"><path d="M0,0 L12,6 L0,12 Z" fill="#fb7185"/></marker>
+
+</defs>
+<rect width="1920" height="1080" fill="#05080e"/>
+<path d="M118 318V244H1802V318" fill="none" stroke="#67e8f9" stroke-width="4"/>
+<text x="960" y="198" fill="#67e8f9" font-size="27" font-weight="760" text-anchor="middle" letter-spacing="2.2">INTEGRATION BOUNDARY</text>
+<g>
+  <rect x="118" y="402" width="350" height="238" rx="16" fill="#101827" stroke="#fbbf24" stroke-width="4"/>
+  <rect x="118" y="402" width="350" height="10" rx="5" fill="#fbbf24"/>
+  <text x="293" y="474" fill="#9aa9bd" font-size="18" font-weight="760" text-anchor="middle" letter-spacing="2">DRIVE</text>
+  <text x="293" y="540" fill="#f8fafc" font-size="31" font-weight="780" text-anchor="middle" letter-spacing="0">TRUMPF</text>
+  <text x="293" y="584" fill="#fbbf24" font-size="22" font-weight="620" text-anchor="middle" letter-spacing="0">30 kW CO₂ laser</text>
+</g>
+<g>
+  <rect x="538" y="402" width="350" height="238" rx="16" fill="#101827" stroke="#fb7185" stroke-width="4"/>
+  <rect x="538" y="402" width="350" height="10" rx="5" fill="#fb7185"/>
+  <text x="713" y="474" fill="#9aa9bd" font-size="18" font-weight="760" text-anchor="middle" letter-spacing="2">CREATE EUV</text>
+  <text x="713" y="540" fill="#f8fafc" font-size="31" font-weight="780" text-anchor="middle" letter-spacing="0">CYMER</text>
+  <text x="713" y="584" fill="#fb7185" font-size="22" font-weight="620" text-anchor="middle" letter-spacing="0">tin-droplet source</text>
+</g>
+<g>
+  <rect x="958" y="402" width="350" height="238" rx="16" fill="#101827" stroke="#c084fc" stroke-width="4"/>
+  <rect x="958" y="402" width="350" height="10" rx="5" fill="#c084fc"/>
+  <text x="1133" y="474" fill="#9aa9bd" font-size="18" font-weight="760" text-anchor="middle" letter-spacing="2">SHAPE LIGHT</text>
+  <text x="1133" y="540" fill="#f8fafc" font-size="31" font-weight="780" text-anchor="middle" letter-spacing="0">ZEISS</text>
+  <text x="1133" y="584" fill="#c084fc" font-size="22" font-weight="620" text-anchor="middle" letter-spacing="0">collector + optics</text>
+</g>
+<g>
+  <rect x="1378" y="402" width="424" height="238" rx="16" fill="#101827" stroke="#67e8f9" stroke-width="4"/>
+  <rect x="1378" y="402" width="424" height="10" rx="5" fill="#67e8f9"/>
+  <text x="1590" y="474" fill="#9aa9bd" font-size="18" font-weight="760" text-anchor="middle" letter-spacing="2">PLACE PATTERN</text>
+  <text x="1590" y="540" fill="#f8fafc" font-size="31" font-weight="780" text-anchor="middle" letter-spacing="0">ASML</text>
+  <text x="1590" y="584" fill="#67e8f9" font-size="22" font-weight="620" text-anchor="middle" letter-spacing="0">stages + control</text>
+</g>
+<path d="M468 521H526" stroke="#9aa9bd" stroke-width="4" marker-end="url(#arrow-cyan)"/>
+<path d="M888 521H946" stroke="#9aa9bd" stroke-width="4" marker-end="url(#arrow-cyan)"/>
+<path d="M1308 521H1366" stroke="#9aa9bd" stroke-width="4" marker-end="url(#arrow-cyan)"/>
+<text x="960" y="760" fill="#f8fafc" font-size="27" font-weight="620" text-anchor="middle" letter-spacing="0">vacuum · alignment · sensors · software</text>
+<text x="960" y="812" fill="#9aa9bd" font-size="22" font-weight="580" text-anchor="middle" letter-spacing="0">qualified together as one production scanner</text>
+</svg>
